@@ -1,15 +1,14 @@
 import javax.swing.*;
-        import java.awt.*;
+import java.awt.*;
 
-class JFrame09 {
+class JFrame09A {
     public static void main(String[] args) {
         JFrame frame = new JFrame( "JFrame09" );
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); //***
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int w = screenSize.width;
-        int h = screenSize.height;
-        frame.setBounds( w/4, h/4, w/2, h/2 );
+        frame.setBounds( 0, 0, 100, 100 );
         frame.setMinimumSize(new Dimension(100, 100));
         frame.setVisible(true);
     }
 }
+
