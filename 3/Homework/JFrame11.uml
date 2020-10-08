@@ -1,0 +1,22 @@
+@startuml
+
+object ": JFrame" as JFrame
+object "JFrame11 : JFrame" as JFrame11
+object ": JMenu" as JMenu
+object "File : JMenu" as File
+object "Edit : JMenu" as Edit
+object "Help : JMenu" as Help
+object ": JMenuBar" as JMenuBar
+object "menubar : JMenuBar" as menubar
+object JPanel
+
+JFrame -- JFrame11
+JFrame11 -- JMenu
+JMenu -- File
+JMenu -- Edit
+JMenu -- Help
+JFrame11 -- JMenuBar
+JMenuBar -- menubar
+JFrame11 -- JPanel
+
+@enduml
